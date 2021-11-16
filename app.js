@@ -4,7 +4,7 @@ const path = require("path")
 
 app.use(express.static(__dirname + "/public"))
 
-app.listen(process.env.PORT || 3030, () => {
+app.listen(process.env.PORT || 3000, () => { //3030 para heroku
     console.log("ok")})
 
 app.get("/", (req, res) => 
